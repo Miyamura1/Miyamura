@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-title color="dark">AYAH PIN</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <p class="ion-text-center">
+    <img src="assets/ayahpin.jpg" width=200%>
+  </p>
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col size="6">
+        <ion-button [routerLink]="['/programme']" expand="full" fill="outline">
+          <ion-icon slot="end" name="school-outline"></ion-icon>
+          Programme
+        </ion-button>
+      </ion-col>
+      <ion-col size="6">
+        <ion-button [routerLink]="['/contactus']" expand="full" fill="outline">
+         <ion-icon slot="end" name="call-outline"></ion-icon>
+         ContactUs
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+<ion-footer>
+  <ion-toolbar color="danger" class="ion-text-center">
+  <ion-title>Copyright @2021</ion-title>
+</ion-toolbar>
+</ion-footer>

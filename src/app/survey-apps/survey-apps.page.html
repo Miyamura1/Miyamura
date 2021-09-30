@@ -1,0 +1,73 @@
+<ion-app>
+  <ion-header [translucent]="true">
+    <ion-toolbar color="warning">
+      <ion-header-list></ion-header-list>
+
+      <ion-title><b>Survey Kuptm</b></ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+<ion-toolbar>
+<br>
+  <ion-card-title>1.Keadaan Surau Di Kuptm?</ion-card-title>
+<br>
+</ion-toolbar>
+<ion-radio-group [(ngModel)]="value_selected">
+<ion-item>
+  
+  <ion-radio value="SA"></ion-radio>
+  <d style="padding-left:0.5em;" > </d>
+  <ion-label>Mantap</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-radio value="A"></ion-radio>
+    <d style="padding-left:0.5em;" > </d>
+    <ion-label>Okay Je</ion-label>
+
+  </ion-item>
+  <ion-item>
+    <ion-radio value="N"></ion-radio>
+    <d style="padding-left:0.5em;" > </d>
+    <ion-label>Biasa</ion-label>
+
+  </ion-item>
+  <ion-item>
+    <ion-radio value="D"></ion-radio>
+    <d style="padding-left:0.5em;" ></d>
+    <ion-label>Teruk</ion-label>
+
+  </ion-item>
+  <ion-item>
+    <ion-radio value="SD"></ion-radio>
+    <d style="padding-left:0.5em;" > </d>
+    <ion-label>Astaghfirullah</ion-label>
+  </ion-item>
+</ion-radio-group>
+
+<ion-item>
+  <p>2) What is your favourite place near KUPTM?</p>
+</ion-item>
+
+<ion-item>
+<ion-checkbox color="danger" slot="start"></ion-checkbox>
+<ion-label>Mamak Awwal</ion-label>
+</ion-item>
+<ion-item>
+<ion-checkbox color="danger" checked slot="start"></ion-checkbox>
+<ion-label>Sempoi</ion-label>
+</ion-item>
+<ion-item>
+<ion-checkbox color="danger" checked slot="start"></ion-checkbox>
+<ion-label>Sunway Velocity</ion-label>
+</ion-item>
+
+
+  
+  
+<ion-content fullscreen class="ion-padding">
+
+      <ion-alert-controller><ion-button color="warning"></ion-button></ion-alert-controller>
+      <ion-button expand="block" fill="outline"  color="warning" (click)="CreatePrompt()">Submit</ion-button>
+    </ion-content>
+
+  </ion-app>

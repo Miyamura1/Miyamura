@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title >MAKANAN</ion-title>
+  </ion-toolbar>
+</ion-header>
+  
+    <ion-content [fullscreen]="true" >
+      <ion-header collapse="condense" >
+        <ion-toolbar color="warning">
+          <ion-title size="large">MAKANAN</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      
+     
+    <ion-list>
+      <ion-list-header>Nama</ion-list-header>
+     
+        <ion-item *ngFor="let entry of form">
+          <ion-label>{{entry.val}}</ion-label>
+          <ion-checkbox slot="end" [(ngModel)]="entry.isChecked"> </ion-checkbox>
+        </ion-item>
+      </ion-list>
+      
+      
+      <ion-list>
+        <ion-radio-group>
+          <ion-list-header color="warning">
+            <ion-label>
+             Nama
+            </ion-label>
+          </ion-list-header>
+
+          <ion-item *ngFor="let i of form">
+            <ion-label>{{i.val}}</ion-label>
+            <ion-radio></ion-radio>
+          </ion-item>
+        </ion-radio-group>
+      </ion-list>
+    
+</ion-content>
+ 

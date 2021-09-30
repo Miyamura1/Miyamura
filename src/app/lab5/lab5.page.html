@@ -1,0 +1,24 @@
+<ion-content>
+  <ion-toolbar>
+  <ion-title><p>Negeri</p></ion-title>
+  </ion-toolbar>
+<ion-toolbar>
+ <ion-searchbar
+ [(ngModel)]="searchTerm"
+ (ionChange)="setFilteredItems()"
+ ></ion-searchbar>
+
+</ion-toolbar>
+<ion-list>
+ <ion-item *ngFor="let item of items" (click)="onDirectPage(item)">
+
+  <ion-avatar>
+    <img [src]="item.image"/>
+    
+  </ion-avatar>
+  <ion-label>{{ item.title }}</ion-label>
+ 
+</ion-item>
+</ion-list>
+
+</ion-content>
